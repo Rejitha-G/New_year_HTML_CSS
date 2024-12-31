@@ -44,6 +44,13 @@ body {
         color: transparent; 
 
   }
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f10303;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: slideUp 1.5s ease-out;
+  }
   
   
   /* Balloon styles */
@@ -227,3 +234,20 @@ body {
       height: 90px;
     }
   }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @media (max-width: 768px){ 
+    p {
+      font-size: 18px;
+    }
+  }
+  
